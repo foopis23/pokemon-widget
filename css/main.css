@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "pokemon-font";
+  src: url("/fonts/PKMN-RBYGSC.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.pokemon-name {
+  text-transform: capitalize;
+  color: white;
+  font-family: "pokemon-font";
+}
+
+.light-theme .pokemon-name {
+  color: black;
+}
+
+#pokemon-canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  aspect-ratio: 1;
+  flex-grow: 1;
+}
